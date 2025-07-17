@@ -1,4 +1,4 @@
-# Community  Structure and Goals 
+# Community Structure and Goals 
 
 ## Goals and Vision
 **Purpose-Driven:** A community needs to have a clear purpose that its members believe in and are willing to work towards. This purpose should be communicated clearly and consistently.
@@ -10,18 +10,6 @@ In the immediate term, we're focused on building a network of volunteers, member
 
 Our goal is not only to strengthen our local community but also to expand everyone’s network. We want members to be able to engage with and visit other like-minded communities, creating a broader, connected ecosystem of collaboration and support.
 
-### A Third Place 
-Taken from [The Good Place](https://en.wikipedia.org/wiki/The_Great_Good_Place_(book))
-We as a community strive to be:
-* Open and inviting.
-* Comfortable and informal.
-* Convenient.
-* Unpretentious.
-* Filled with regulars.
-* Driven by conversation
-* A place for laughter and joy.
-
-We will provide activites and refreshements, during most events, but a sign of a healthy community is when folks are willing to show up just to be around each other. This is our north star.
 
 ## Principals of Belonging 
 
@@ -78,6 +66,8 @@ Members will be both organizations and people. We will have tiered memberships. 
 
 In summary,
 We recognize sustaining members for their ongoing support in any form — time, talent, or treasure. Core contributors go a step further by taking ownership of community outcomes. a Commmunity Maintainers is like a community elder — someone who upholds our values, mentors others, and maintains cultural continuity, even if they’re not writing code every day.
+
+
 
 ### The Board
 The board is a leadership role, but it operates outside the inner rings of the community. While it serves and supports the community, it is the innermost circle of active contributors and organizers who ultimately drive outcomes and shape the community’s direction. The board’s primary responsibility is to empower those individuals by securing the resources they need.
@@ -141,6 +131,27 @@ The board roles are as follows:
 Additional roles may be defined by the founding team as the organization evolves, based on the needs of the community and strategic initiatives.
 
 
+## Community Boundaries and Initiation 
 
+## Community Rituals (Common Activites and Shared Traditions)
 
+## Community Space
+Taken from [The Good Place](https://en.wikipedia.org/wiki/The_Great_Good_Place_(book))
+We as a community strive to be:
+* Open and inviting.
+* Comfortable and informal.
+* Convenient.
+* Unpretentious.
+* Filled with regulars.
+* Driven by conversation
+* A place for laughter and joy.
 
+### Physical Spaces
+We will provide activites and refreshements, during most events, but a sign of a healthy community is when folks are willing to show up just to be around each other. This is the ultimate goal of our shared community spaces. For where and when we meet, please check out our [Meetup Site]() as well as our [Discord](https://discord.gg/XsHBtnBH)
+### Virtual Spaces 
+The goals of our virtual spaces are the same as our physical spaces. Our virtual spaces include:
+* [AMLC of the Rockies Discord](https://discord.gg/XsHBtnBH)
+* [AMLC of the Rockies YouTube Channel](https://www.youtube.com/channel/UC1mzpF-lh7umde3v0cMtKmQ) 
+* More to come! 
+
+## Community Symbols and Artifacts 
