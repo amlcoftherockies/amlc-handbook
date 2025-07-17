@@ -17,9 +17,9 @@ We as a community strive to be:
 * Comfortable and informal.
 * Convenient.
 * Unpretentious.
-* There are regulars.
-* Conversation is the main activity.
-* Laughter is frequent.
+* Filled with regulars.
+* Driven by conversation
+* A place for laughter and joy.
 
 We will provide activites and refreshements, during most events, but a sign of a healthy community is when folks are willing to show up just to be around each other. This is our north star.
 
