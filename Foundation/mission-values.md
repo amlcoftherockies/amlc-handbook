@@ -43,3 +43,6 @@ Some examples we are targeting are:
 * **Education:** Grow our members' skill sets by sponsoring and creating events to showcase new technologies, soft skills, hard skills, software, etc. 
 * **Career Growth:** As a community, we should work to vet and compile our members' resumes, helping people secure jobs, enhance their skills, and expand their professional networks. This will create a safe space for networking and establish genuine connections that facilitate job opportunities and sales for our members. This includes vetting recruiters or those who want access to the community to keep the community safe. Accessing this community is a privilege and we want to protect our members from spam or unwanted sales motions with room for economic mobility and opportunity. 
 * **Personal Growth:** Create a “third space” for members to meet, socialize, develop friendships, debate topics, develop ideas, provide support, learn, and achieve. A safe space to innovate and collaborate. 
+
+
+

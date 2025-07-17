@@ -51,6 +51,12 @@ Examples are:
 
 Or in our case: 
 
+![Logo](../images/community-structure/AMLC.drawio.png)
+
+
+
+The rings are as follows:
+
 * **Visitor:** Just exploring, no commitment yet.
 * **Member:**  Shows up to events, maybe joins the discussion. Has purchased a basic membership. 
 * **Sustaining Member** (Time, Talent, or Treasure) Supports the community regularly. Some examples are" 
@@ -62,10 +68,12 @@ Or in our case:
 
 **Community Maintainer/ Organizer** (Leadership)*: Coordinates efforts, mentors others, maintains culture and systems. Often combines multiple contribution types, but focuses on enabling others.
 
+Members will be both organizations and people. We will have tiered memberships. Users may obtain member status through donations of time, currency, or contributions.  (Time, Talent, Treasure) 
 
 ### Community Leadership Roles
 #### Organizer
 #### Community Maintainer 
+### Organization Membership
 
 
 In summary,
@@ -76,12 +84,62 @@ The board is a leadership role, but it operates outside the inner rings of the c
 
 Our board members and officers are all volunteers. At this time, no one in the community is paid. We’re committed to ensuring that every dollar of community contributions directly supports growth and meaningful community offerings.
 
-The board roles are as follows:
-### President
-### Vice President
-### Treasurer 
+The board also handles:
 
-Members will be both organizations and people. We will have tiered memberships. Users may obtain member status through donations of time, currency, or contributions.  (Time, Talent, Treasure) 
+* Financial stewardship and marketing strategy
+
+* Building and maintaining partnerships
+
+* Community advocacy
+
+* Filling in operational gaps on a day-to-day basis
+
+* Planning and executing events
+
+* Most community operations in coordination with core contributors
+
+The board has been intentionally composed with diverse expertise to fulfill these responsibilities. While it may hold final decision-making authority when necessary, we are committed to transparency, strong member involvement, and regular communication. Whenever possible, decisions will involve member input and sign-off, ensuring the board remains accountable to the community it serves. We will designate officers, all of whom have to be board members. We can add additional officers should the community or board advocate for it.
+
+The board roles are as follows:
+#### President
+
+* Oversees day-to-day operations
+
+* Manages partnerships and external relationships
+
+* Authorized to write checks and purchase property on behalf of the nonprofit
+
+* Works with the Treasurer and board to align funding with community goals
+
+#### Vice President
+
+* Shares all responsibilities of the President
+
+* Serves as acting President in their absence
+
+* Supports coordination of operations and partnerships
+
+#### Treasurer
+
+* Manages all financial matters, including budgeting, reporting, and oversight of funds
+
+* Maintains accurate records of income, expenses, and contributions
+
+* Authorized to write and deposit checks and purchase property on behalf of the nonprofit
+
+* Responsible for acquiring, managing, and recording all types of funding
+
+* Develops and proposes the annual budget, including:
+
+* Projected income (memberships, sponsorships, donations, partnerships)
+
+* Operational and event-related expenses
+
+* nfrastructure costs and contingency funds
+
+#### Other Officers
+Additional roles may be defined by the founding team as the organization evolves, based on the needs of the community and strategic initiatives.
+
 
 
 
