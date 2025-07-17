@@ -4,9 +4,7 @@
 ***In machine learning and life: collective communication scales.***
 
 ## Mission Statement
-Our community is dedicated to building a hands-on, inclusive space for AI and ML practitioners to explore, discuss, and shape the future of artificial intelligence. We focus on curated discussions and collaborative problem-solving around the challenges and opportunities facing like-minded individuals in the evolving AI/ML landscape.
-We are a community-led, volunteer-driven initiative committed to empowering others through shared learning, open dialogue, and diverse perspectives. If you’re interested in contributing your time, expertise, or resources to support our mission, you are welcome to join us. 
-
+Our community is a hands-on, inclusive space where AI and ML practitioners come together to explore, discuss, and shape the future of artificial intelligence. We foster curated discussions and collaborative problem-solving around real-world challenges and opportunities. As a volunteer-driven, community-led initiative, we’re committed to empowering members through shared learning, open dialogue, and diverse perspectives, while opening doors to career, educational, and social opportunities that showcase their AI/ML talents.
 
 
 ## Why Community?
@@ -15,8 +13,6 @@ We are a community-led, volunteer-driven initiative committed to empowering othe
 
 In today’s world, we’re inundated with content claiming to offer the “best” tools or the “optimal path to value”—often without understanding who they’re actually talking to. This leaves individuals investing time and resources into tools, skills, or systems that may not truly address their needs.
 We recognize that the ML stack is too broad for any one person or team to master entirely, and the industry moves quickly. That’s why hearing from those who’ve been in the hot seat across different roles is so valuable—it helps us understand how to better build for, support, or collaborate with other teams.
-
-
 
 
 ## Values
@@ -47,15 +43,3 @@ Some examples we are targeting are:
 * **Education:** Grow our members' skill sets by sponsoring and creating events to showcase new technologies, soft skills, hard skills, software, etc. 
 * **Career Growth:** As a community, we should work to vet and compile our members' resumes, helping people secure jobs, enhance their skills, and expand their professional networks. This will create a safe space for networking and establish genuine connections that facilitate job opportunities and sales for our members. This includes vetting recruiters or those who want access to the community to keep the community safe. Accessing this community is a privilege and we want to protect our members from spam or unwanted sales motions with room for economic mobility and opportunity. 
 * **Personal Growth:** Create a “third space” for members to meet, socialize, develop friendships, debate topics, develop ideas, provide support, learn, and achieve. A safe space to innovate and collaborate. 
-
-
-## Principals of Belonging 
-
-We seek to continoussly ask and improve our answers to these questions:
-* What is the boundary to belong in this community?
-* How are members initiated (if at all) upon joining the community?
-* How involved are people in the community rituals? (e.g. invites to meetings and opportunities to speak)
-* How accessible is the community space?
-* What are a peoples's values and how do they align with the communities?
-* What physical token can we provide to people to remind them of this community and help them bring others into it?
-* How clear are the inner rings to people. (outer ring being visiot and inner ring being an elder dedicated and empowered to serve and support the community)

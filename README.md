@@ -1,2 +1,2 @@
-# amlc-handbook
-Community handbook that describes the AMLC of the Rockies mission, policies, and processes for internal and external community members
+# Community Handbook
+This handbook outlines the mission, policies, and processes of the Applied Machine Learning Collective (AMLC) of the Rockies for both internal and external community members. Inspired by [The GitLab Handbook](https://handbook.gitlab.com/), which open-sourced the structure of an entire organization, we similarly value transparency and open dialogue. We believe strong leaders and strong communities are unafraid to share their ideas and welcome constructive discussion as long as it follows our [Code of Conduct]().
