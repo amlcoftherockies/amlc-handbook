@@ -28,4 +28,4 @@ We are just getting started as a community, but have a big vision. Here are some
 * Networking meetings (Casual)
 * Workshops (hands on)
 * Holiday events 
-* Partner events (maybe with another community) 
+* Partnered events
