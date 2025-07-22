@@ -28,13 +28,12 @@ We seek to continoussly ask and improve our answers to these questions:
 ### Inner Rings 
 The Inner Rings prinicpal is how somomone enters and then continuest to strengthens their bonds within the community. 
 
-Examples are:
-• Visitor
-• Novice
-• Member
-• Elder
-• Principal Elder
-
+Examples are:  
+• Visitor  
+• Novice  
+• Member  
+• Elder  
+• Principal Elder  
 
 
 Or in our case: 
@@ -66,7 +65,6 @@ Members will be both organizations and people. We will have tiered memberships. 
 
 In summary,
 We recognize sustaining members for their ongoing support in any form — time, talent, or treasure. Core contributors go a step further by taking ownership of community outcomes. a Commmunity Maintainers is like a community elder — someone who upholds our values, mentors others, and maintains cultural continuity, even if they’re not writing code every day.
-
 
 
 ### The Board
@@ -148,6 +146,7 @@ We as a community strive to be:
 
 ### Physical Spaces
 We will provide activites and refreshements, during most events, but a sign of a healthy community is when folks are willing to show up just to be around each other. This is the ultimate goal of our shared community spaces. For where and when we meet, please check out our [Meetup Site]() as well as our [Discord](https://discord.gg/XsHBtnBH)
+
 ### Virtual Spaces 
 The goals of our virtual spaces are the same as our physical spaces. Our virtual spaces include:
 * [AMLC of the Rockies Discord](https://discord.gg/XsHBtnBH)
