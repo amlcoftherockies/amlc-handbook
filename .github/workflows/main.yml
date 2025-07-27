@@ -16,5 +16,6 @@ jobs:
       with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: chasecadet
+          team-reviewers: amlc-reviewers
           numOfAssignee: 1
-          team-reviewers: amlcoftherockies/amlc-reviewers
+
