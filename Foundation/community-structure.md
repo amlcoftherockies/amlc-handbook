@@ -160,3 +160,5 @@ The goals of our virtual spaces are the same as our physical spaces. Our virtual
 * More to come! 
 
 ## Community Symbols and Artifacts 
+Our AMLC logo is below! 
+![Logo](../images/community-structure/amlc-logo.png)
