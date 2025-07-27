@@ -28,3 +28,5 @@ The value the AMLC leadership gets is the same value every member gets: connecti
 
 By organizing as a nonprofit, we commit to full transparency and shared ownership of outcomes. The community is the organization.
 
+## Don't Like What You See? 
+We won't always get it right, but want to ensure we can get as close as possible. Feel free to [contribute](/README.md) and help us with a `proposal`, `inquiry`, or `discussion`! We would love your feedback! 

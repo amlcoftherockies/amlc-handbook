@@ -21,3 +21,7 @@ AMLC is built on full transparency. We’re happy to share how funds are used, h
 If you ever need help explaining your involvement or want support communicating with leadership, we’re here to help. We can even provide a one-pager, explainer deck, or co-host a session to walk through what AMLC is and how it creates value for individuals and the organizations they serve. 
 
 Feel free to reach out to `leadership@amlcoftherockies.org` for any questions, concerns, or other support! 
+
+## Don't Like What You See? 
+We won't always get it right, but want to ensure we can get as close as possible. Feel free to [contribute](/README.md) and help us with a `proposal`, `inquiry`, or `discussion`! We would love your feedback! 
+

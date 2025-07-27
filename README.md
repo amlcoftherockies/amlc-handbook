@@ -62,7 +62,7 @@ cd amlc-handbook
 `git checkout -b my-proposed-change`
 
 3. Make your edits to the handbook files
-# (Use your favorite editor, e.g., VS Code, nano, etc.)
+(Use your favorite editor, e.g., VS Code, nano, etc.)
 
 4. Stage and commit your changes
 ```
@@ -72,3 +72,9 @@ git commit -m "Propose: Updated section on officer roles - Resolves #42"
 
 5. Push your branch to GitHub
 `git push origin my-proposed-change `
+
+6. Create a pull request
+Detailed docs [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request)
+
+
+Feel free to reach out to us on the AMLC of the Rockies Discord or email `leadership@amlcoftherockies.org` for additional support! 

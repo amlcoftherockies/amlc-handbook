@@ -26,7 +26,7 @@ We seek to continoussly ask and improve our answers to these questions:
 
 
 ### Inner Rings 
-The Inner Rings prinicpal is how somomone enters and then continuest to strengthens their bonds within the community. 
+The Inner Rings prinicpal is how somomone enters and then continuest to strengthens their bonds within the community. These rings are a tool to help define boundaries for our community. 
 
 Examples are:  
 • Visitor  
@@ -36,13 +36,7 @@ Examples are:
 • Principal Elder  
 
 
-Or in our case: 
-
-![Logo](../images/community-structure/AMLC.drawio.png)
-
-
-
-The rings are as follows:
+Or in our case the rings are as follows:
 
 * **Visitor:** Just exploring, no commitment yet.
 * **Member:**  Shows up to events, maybe joins the discussion. Has purchased a basic membership. 
@@ -54,6 +48,15 @@ The rings are as follows:
 **Core Contributor:** Active builders, writers, designers, helpers. Deep commitment to execution — ongoing responsibility. Recognized by peers for meaningful output.
 
 **Community Maintainer/ Organizer** (Leadership)*: Coordinates efforts, mentors others, maintains culture and systems. Often combines multiple contribution types, but focuses on enabling others.
+
+
+
+![Logo](../images/community-structure/AMLC.drawio.png)  
+
+#### Why Do We Need Boundaries? 
+Check out our [FAQ](/Frequently-Asked-Questions/Why-Boundaries.md)
+
+## Members 
 
 Members will be both organizations and people. We will have tiered memberships. Users may obtain member status through donations of time, currency, or contributions.  (Time, Talent, Treasure) 
 
@@ -86,7 +89,7 @@ The board also handles:
 
 * Most community operations in coordination with core contributors
 
-The board has been intentionally composed with diverse expertise to fulfill these responsibilities. While it may hold final decision-making authority when necessary, we are committed to transparency, strong member involvement, and regular communication. Whenever possible, decisions will involve member input and sign-off, ensuring the board remains accountable to the community it serves. We will designate officers, all of whom have to be board members. We can add additional officers should the community or board advocate for it.
+
 
 The board roles are as follows:
 #### President
@@ -128,6 +131,9 @@ The board roles are as follows:
 #### Other Officers
 Additional roles may be defined by the founding team as the organization evolves, based on the needs of the community and strategic initiatives.
 
+#### The Board's Commitment to You
+
+The board has been intentionally composed with diverse expertise to fulfill these responsibilities. While it may hold final decision-making authority when necessary, we are committed to transparency, strong member involvement, and regular communication. Whenever possible, decisions will involve member input and sign-off, ensuring the board remains accountable to the community it serves. We will designate officers, all of whom have to be board members. We can add additional officers should the community or board advocate for it.
 
 ## Community Boundaries and Initiation 
 
