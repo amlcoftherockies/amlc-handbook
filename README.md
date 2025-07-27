@@ -66,7 +66,7 @@ cd amlc-handbook
 
 # 4. Stage and commit your changes
 ```
-git add .
+git add -A
 git commit -m "Propose: Updated section on officer roles - Resolves #42"
 ```
 
