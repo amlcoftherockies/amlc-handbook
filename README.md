@@ -67,8 +67,8 @@ cd amlc-handbook
 # 4. Stage and commit your changes
 ```
 git add .
-git commit -m "Propose: Updated section on officer roles"
+git commit -m "Propose: Updated section on officer roles - Resolves #42"
 ```
 
 # 5. Push your branch to GitHub
-`git push origin my-proposed-change`
+`git push origin my-proposed-change `
