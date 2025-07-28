@@ -10,16 +10,32 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
+
     steps:
+      # Auto-assign GitHub issues
       - name: 'Auto-assign issue'
+        if: github.event_name == 'issues'
         uses: pozil/auto-assign-issue@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: chasecadet
-      - name: 'Auto-assign review'
-        uses: peter-evans/reviewers@v2
+
+      # Auto-assign PR assignee
+      - name: 'Auto-assign PR'
+        if: github.event_name == 'pull_request'
+        uses: pozil/auto-assign-issue@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          team-reviewers: amlc-reviewers
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: chasecadet
 
-
+      # Auto-request team reviewers (only on PRs)
+      - name: 'Assign Team and Persons'
+        if: github.event_name == 'pull_request'
+        uses: rowi1de/auto-assign-review-teams@v1.1.3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          org: amlcoftherockies
+          teams: amlc-reviewers
+          include-draft: false
+          skip-with-manual-reviewers: 0
+          pick-one-from-persons-or-team: false
