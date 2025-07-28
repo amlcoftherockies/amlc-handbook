@@ -11,11 +11,15 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - name: 'Auto-assign issue'
-      uses: pozil/auto-assign-issue@v1
-      with:
+      - name: 'Auto-assign issue'
+        uses: pozil/auto-assign-issue@v1
+        with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: chasecadet
+      - name: 'Auto-assign review'
+        uses: peter-evans/reviewers@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           team-reviewers: amlc-reviewers
-          numOfAssignee: 1
+
 
