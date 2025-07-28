@@ -37,5 +37,5 @@ jobs:
           org: amlcoftherockies
           teams: amlc-reviewers
           include-draft: false
-          skip-with-manual-reviewers: 0
+          skip-with-manual-reviewers: 1
           pick-one-from-persons-or-team: false
