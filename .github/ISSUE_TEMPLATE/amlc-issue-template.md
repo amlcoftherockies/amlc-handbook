@@ -1,6 +1,6 @@
 ---
-name: issue
-about: Help standardize how we open issues.
+name: AMLC Issue Template
+about: Help standardize how we open issues.  PICK ME!
 title: ''
 labels: ''
 assignees: ''
