@@ -1,0 +1,114 @@
+name: Sync from Public to Staging
+
+# This workflow runs in the STAGING (private) repo
+# It pulls changes from the PUBLIC repo when PRs are merged there
+
+on:
+  # Manual trigger
+  workflow_dispatch:
+  
+  # Scheduled sync (daily at 2 AM UTC)
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Webhook trigger (requires setup in public repo)
+  repository_dispatch:
+    types: [public-pr-merged]
+
+jobs:
+  sync-public-to-staging:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout staging repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Configure git
+        run: |
+          git config user.name "AMLC Bot"
+          git config user.email "bot@amlcoftherockies.org"
+      
+      - name: Add public repo as remote
+        run: |
+          git remote add public https://github.com/amlcoftherockies/amlc-handbook.git
+          git fetch public
+      
+      - name: Create sync branch
+        run: |
+          TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+          BRANCH_NAME="sync/public-to-staging-${TIMESTAMP}"
+          git checkout -b ${BRANCH_NAME}
+          echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_ENV
+      
+      - name: Merge public main into sync branch
+        id: merge
+        run: |
+          if git merge public/main --no-edit; then
+            echo "merge_status=success" >> $GITHUB_OUTPUT
+          else
+            echo "merge_status=conflict" >> $GITHUB_OUTPUT
+            git merge --abort
+          fi
+      
+      - name: Push sync branch
+        if: steps.merge.outputs.merge_status == 'success'
+        run: |
+          git push origin ${BRANCH_NAME}
+      
+      - name: Create Pull Request
+        if: steps.merge.outputs.merge_status == 'success'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ env.BRANCH_NAME }}
+          title: "🔄 Sync from public repo"
+          body: |
+            ## Automated Sync from Public Repository
+            
+            This PR syncs changes from the public `amlc-handbook` repository to staging.
+            
+            **Source:** `amlcoftherockies/amlc-handbook` (public)
+            **Target:** `amlcoftherockies/amlc-handbook-staging` (private)
+            
+            ### Review Checklist
+            - [ ] Review all changes for sensitive information
+            - [ ] Ensure no internal-only content is being overwritten
+            - [ ] Verify all links and references are correct
+            
+            **Note:** This sync was triggered automatically. Review carefully before merging.
+          labels: |
+            sync
+            automated
+          reviewers: chasecadet
+      
+      - name: Comment on conflict
+        if: steps.merge.outputs.merge_status == 'conflict'
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: "⚠️ Sync Conflict: Public to Staging"
+          content: |
+            ## Merge Conflict Detected
+            
+            The automated sync from the public repository encountered merge conflicts.
+            
+            **Action Required:** Manual resolution needed.
+            
+            ### Steps to Resolve:
+            1. Clone the staging repo locally
+            2. Add public remote: `git remote add public https://github.com/amlcoftherockies/amlc-handbook.git`
+            3. Fetch public changes: `git fetch public`
+            4. Create a branch: `git checkout -b sync/manual-resolution`
+            5. Merge and resolve: `git merge public/main`
+            6. Resolve conflicts in your editor
+            7. Commit and push: `git push origin sync/manual-resolution`
+            8. Create a PR for review
+            
+            **Timestamp:** ${{ github.run_id }}
+          labels: |
+            sync
+            conflict
+            needs-attention
+

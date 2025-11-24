@@ -1,0 +1,43 @@
+name: Notify Staging on PR Merge
+
+# This workflow runs in the PUBLIC repo
+# It notifies the staging repo when a PR is merged to main
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  notify-staging:
+    # Only run if PR was actually merged (not just closed)
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Notify staging repo
+        run: |
+          echo "PR #${{ github.event.pull_request.number }} was merged to main"
+          echo "Title: ${{ github.event.pull_request.title }}"
+          echo "Author: ${{ github.event.pull_request.user.login }}"
+          
+          # This would trigger the staging repo's sync workflow
+          # Requires a Personal Access Token (PAT) with repo scope stored as STAGING_SYNC_TOKEN
+          # curl -X POST \
+          #   -H "Accept: application/vnd.github.v3+json" \
+          #   -H "Authorization: token ${{ secrets.STAGING_SYNC_TOKEN }}" \
+          #   https://api.github.com/repos/amlcoftherockies/amlc-handbook-staging/dispatches \
+          #   -d '{"event_type":"public-pr-merged","client_payload":{"pr_number":"${{ github.event.pull_request.number }}","pr_title":"${{ github.event.pull_request.title }}"}}'
+      
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ **Merged to public repo!** This change will be synced to the staging repository automatically.\n\n_Note: The staging repo sync runs daily at 2 AM UTC or can be triggered manually._'
+            })
+
