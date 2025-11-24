@@ -1,0 +1,170 @@
+name: Validate Repository Registry
+
+on:
+  pull_request:
+    paths:
+      - 'Systems/repositories.md'
+      - 'Proposals/CEP-*-new-repo-*.md'
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  check-repo-registry-update:
+    name: Check Repository Registry Updates
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for new repository proposals
+        id: check-proposal
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+            
+            // Check if this PR includes a new repo CEP
+            const hasNewRepoCEP = files.some(file => 
+              file.filename.match(/^Proposals\/CEP-\d+-new-repo-.*\.md$/) && 
+              file.status === 'added'
+            );
+            
+            // Check if repositories.md was updated
+            const hasRegistryUpdate = files.some(file => 
+              file.filename === 'Systems/repositories.md' && 
+              (file.status === 'modified' || file.status === 'added')
+            );
+            
+            console.log('Has new repo CEP:', hasNewRepoCEP);
+            console.log('Has registry update:', hasRegistryUpdate);
+            
+            core.setOutput('has_new_repo_cep', hasNewRepoCEP);
+            core.setOutput('has_registry_update', hasRegistryUpdate);
+            
+            // If there's a new repo CEP, check if registry was updated
+            if (hasNewRepoCEP && !hasRegistryUpdate) {
+              core.setFailed('❌ New repository CEP detected but Systems/repositories.md was not updated');
+              
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                body: `## ⚠️ Repository Registry Update Required
+                
+**A new repository proposal was detected, but the repository registry was not updated.**
+
+### Required Action
+
+Please update \`Systems/repositories.md\` to include the new repository in the appropriate section.
+
+Add an entry like this:
+
+\`\`\`markdown
+#### [repository-name]
+- **URL**: https://github.com/amlcoftherockies/[repository-name]
+- **Visibility**: Public/Private
+- **Purpose**: [Brief description]
+- **Maintainers**: [team name]
+- **Status**: Proposed (pending approval)
+- **Created**: [year]
+- **Related Docs**: [Link to CEP]
+\`\`\`
+
+### Why This Matters
+
+The repository registry (\`Systems/repositories.md\`) is our **single source of truth** for all AMLC repositories. Every new repository must be documented there as part of the proposal process.
+
+This ensures:
+- ✅ Transparency about what repositories exist
+- ✅ Clear ownership and maintenance responsibility
+- ✅ Proper documentation and discoverability
+- ✅ Historical record of repository creation
+
+See [Repository Proposal Process](/Systems/repositories.md#proposing-a-new-repository) for details.`
+              });
+              
+              return;
+            }
+            
+            // If registry was updated, validate the format
+            if (hasRegistryUpdate) {
+              const registryFile = files.find(f => f.filename === 'Systems/repositories.md');
+              
+              if (registryFile && registryFile.patch) {
+                // Check if the update includes required fields
+                const patch = registryFile.patch;
+                const hasURL = patch.includes('**URL**:');
+                const hasVisibility = patch.includes('**Visibility**:');
+                const hasPurpose = patch.includes('**Purpose**:');
+                const hasMaintainers = patch.includes('**Maintainers**:');
+                
+                if (hasURL && hasVisibility && hasPurpose && hasMaintainers) {
+                  console.log('✅ Registry update includes all required fields');
+                  
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: context.payload.pull_request.number,
+                    body: `## ✅ Repository Registry Update Detected
+                    
+The repository registry (\`Systems/repositories.md\`) has been updated with all required fields.
+
+**Next Steps** (for organizers after CEP approval):
+1. Create the repository in GitHub
+2. Configure repository settings (branch protection, teams, etc.)
+3. Make initial commit with README and basic structure
+4. Update the registry entry status from "Proposed" to "Active"
+
+See [Repository Creation Process](/Systems/repositories.md#repository-creation-process) for details.`
+                  });
+                } else {
+                  const missingFields = [];
+                  if (!hasURL) missingFields.push('URL');
+                  if (!hasVisibility) missingFields.push('Visibility');
+                  if (!hasPurpose) missingFields.push('Purpose');
+                  if (!hasMaintainers) missingFields.push('Maintainers');
+                  
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: context.payload.pull_request.number,
+                    body: `## ⚠️ Repository Registry Update Incomplete
+                    
+The repository registry was updated, but some required fields are missing:
+
+**Missing fields**: ${missingFields.join(', ')}
+
+**Required format**:
+\`\`\`markdown
+#### [repository-name]
+- **URL**: https://github.com/amlcoftherockies/[repository-name]
+- **Visibility**: Public/Private
+- **Purpose**: [Brief description]
+- **Maintainers**: [team name]
+- **Status**: Proposed/Active
+- **Created**: [year]
+- **Related Docs**: [Links]
+\`\`\`
+
+Please update the entry to include all required fields.`
+                  });
+                }
+              }
+            }
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Repository Registry Validation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- New Repo CEP: ${{ steps.check-proposal.outputs.has_new_repo_cep }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Registry Updated: ${{ steps.check-proposal.outputs.has_registry_update }}" >> $GITHUB_STEP_SUMMARY
+
