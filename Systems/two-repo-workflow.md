@@ -1,25 +1,53 @@
-# Two-Repository Workflow: Public and Staging
+# ~~Two-Repository~~ Single Repository Workflow with Staging Branch
 
-## Overview
+> **⚠️ WORKFLOW CHANGE**: As of November 2024, we moved from a two-repository workflow (public + private staging repo) to a **single public repository with a staging branch**. This document is kept for historical reference.
 
-AMLC of the Rockies maintains two GitHub repositories to balance transparency with internal collaboration:
+## Current Workflow (Single Repo)
 
-- **[amlc-handbook](https://github.com/amlcoftherockies/amlc-handbook)** (PUBLIC) - For public-facing content and community contributions
-- **[amlc-handbook-staging](https://github.com/amlcoftherockies/amlc-handbook-staging)** (PRIVATE) - For internal discussions, member-only content, and work-in-progress
+AMLC of the Rockies uses a **single public repository** with branch-based workflow:
 
-## Why Two Repositories?
+- **[amlc-handbook](https://github.com/amlcoftherockies/amlc-handbook)** (PUBLIC REPO)
+  - `main` branch - Approved, official content
+  - `staging` branch - Work-in-progress, drafts, experimentation
+  - Feature branches - Specific proposals or changes
 
-### Public Repository (`amlc-handbook`)
-- **Purpose**: Transparent, community-facing documentation
-- **Audience**: General public, potential members, contributors
-- **Content**: Finalized policies, public proposals, community guidelines
-- **Contributions**: Anyone can submit issues and PRs
+**⚠️ IMPORTANT: Everything is PUBLIC, including the staging branch!**
 
-### Staging Repository (`amlc-handbook-staging`)
-- **Purpose**: Internal collaboration and sensitive discussions
-- **Audience**: AMLC members and leadership
-- **Content**: Draft proposals, internal processes, member discussions, sensitive planning
-- **Contributions**: Members only
+See [Transparency and Privacy Guidelines](/Foundation/transparency-and-privacy.md) for how to handle sensitive discussions.
+
+## Why Single Repository?
+
+### Benefits of Full Transparency
+- **Radical transparency**: All work visible, including "sausage-making"
+- **Simpler workflow**: No syncing between repos
+- **Better collaboration**: Everyone can see and contribute to WIP
+- **Learning in public**: Others learn from our process
+- **Trust building**: Nothing hidden, everything documented
+
+### When Privacy is Needed
+For truly sensitive discussions (personal matters, security, legal):
+- Email leadership@amlcoftherockies.org
+- Use Discord private channels
+- Submit security advisories (for vulnerabilities)
+- Propose a private repo (rare, requires CEP justification)
+
+See [Transparency and Privacy Guidelines](/Foundation/transparency-and-privacy.md) for details.
+
+---
+
+## Historical Context: Old Two-Repository Workflow
+
+**Note**: This section documents our previous workflow for historical reference.
+
+### Old Setup (Deprecated)
+- **[amlc-handbook](https://github.com/amlcoftherockies/amlc-handbook)** (PUBLIC) - Public-facing content
+- **[amlc-handbook-staging](https://github.com/amlcoftherockies/amlc-handbook-staging)** (PRIVATE) - Internal discussions
+
+### Why We Changed
+- **Transparency commitment**: We want to show our work, not hide it
+- **Complexity**: Two repos required constant syncing
+- **Barrier to entry**: New contributors couldn't see WIP or context
+- **Trust**: Public staging shows we have nothing to hide
 
 ## Workflow Diagram
 

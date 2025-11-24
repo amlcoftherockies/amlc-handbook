@@ -1,5 +1,9 @@
 # Community Handbook
 
+> **⚠️ THIS REPOSITORY IS PUBLIC**
+> Everything here—including all branches, issues, PRs, and discussions—is visible to the world.
+> Follow our [Code of Conduct](/Foundation/code-of-conduct.md) and see [Transparency & Privacy Guidelines](/Foundation/transparency-and-privacy.md) for how to handle sensitive topics.
+
 ***Our Commitment to Transparency: This handbook is the official, public record of AMLC of the Rockies.***
 
 This handbook serves as the **centralized source of truth** for the Applied Machine Learning Collective (AMLC) of the Rockies. It documents our mission, policies, processes, proposals, and the internal conversations that shape our community's direction. Inspired by [The GitLab Handbook](https://handbook.gitlab.com/), which open-sourced the structure of an entire organization, we similarly value transparency and open dialogue.
@@ -20,19 +24,24 @@ We believe strong leaders and strong communities are unafraid to share their ide
 
 AMLC of the Rockies maintains several repositories to organize different aspects of our community:
 
-- **[amlc-handbook](https://github.com/amlcoftherockies/amlc-handbook)** (this repo) - **Official public record**: Community handbook, policies, governance, proposals, and decision history
-- **[amlc-handbook-staging](https://github.com/amlcoftherockies/amlc-handbook-staging)** (private) - Internal discussions and work-in-progress content before public release
-- **[amlc-programming](https://github.com/amlcoftherockies/amlc-programming)** - Event proposals, talks, workshops, and activities
-- **[amlcoftherockies.org](https://github.com/amlcoftherockies/amlcoftherockies.org)** - Official website source code (public-facing showcase)
+- **[amlc-handbook](https://github.com/amlcoftherockies/amlc-handbook)** (this repo - PUBLIC) - **Official public record**: Community handbook, policies, governance, proposals, and decision history
+  - `main` branch - Official, approved content
+  - `staging` branch - Work-in-progress (also public!)
+- **[amlc-programming](https://github.com/amlcoftherockies/amlc-programming)** (PUBLIC) - Event proposals, talks, workshops, and activities
+- **[amlcoftherockies.org](https://github.com/amlcoftherockies/amlcoftherockies.org)** (PUBLIC) - Official website source code (public-facing showcase)
+
+**See**: [Repository Registry](/Systems/repositories.md) for complete list and details.
 
 ### The Handbook vs. The Website
 
 - **Handbook** (this repo): The authoritative source of truth - where decisions are made, documented, and preserved
 - **Website**: Public-facing showcase - highlights, events, and community information
 
-**For members:** See [Two-Repository Workflow](/Systems/two-repo-workflow.md) for how to work with both public and staging repos.
+### Working with This Repository
 
-**For complete setup documentation:** See [COMPLETE-SETUP-INDEX.md](/COMPLETE-SETUP-INDEX.md) - Master index of all handbook systems, configurations, and enhancements.
+- **For contributors:** See [Staging Branch Workflow](/Systems/staging-branch-workflow.md) for how to use branches
+- **For privacy needs:** See [Transparency & Privacy Guidelines](/Foundation/transparency-and-privacy.md)
+- **For complete setup:** See [COMPLETE-SETUP-INDEX.md](/COMPLETE-SETUP-INDEX.md) - Master index of all systems
 
 ## 📝 What Gets Documented Here
 

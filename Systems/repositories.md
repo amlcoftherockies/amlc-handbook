@@ -10,21 +10,15 @@ This document serves as the **single source of truth** for all AMLC repositories
 
 #### amlc-handbook
 - **URL**: https://github.com/amlcoftherockies/amlc-handbook
-- **Visibility**: Public
+- **Visibility**: Public (including all branches - staging is also public!)
 - **Purpose**: Official public record of community governance, policies, proposals, and decision history
+- **Branches**:
+  - `main` - Official, approved content
+  - `staging` - Work-in-progress (public!)
 - **Maintainers**: amlc-organizers team
 - **Status**: Active
 - **Created**: 2024
-- **Related Docs**: [Transparency Commitment](/Foundation/transparency.md), [Two-Repo Workflow](/Systems/two-repo-workflow.md)
-
-#### amlc-handbook-staging
-- **URL**: https://github.com/amlcoftherockies/amlc-handbook-staging
-- **Visibility**: Private
-- **Purpose**: Internal discussions and work-in-progress content before public release
-- **Maintainers**: amlc-organizers team, amlc-reviewers team
-- **Status**: Active
-- **Created**: 2024
-- **Related Docs**: [Two-Repo Workflow](/Systems/two-repo-workflow.md)
+- **Related Docs**: [Transparency Commitment](/Foundation/transparency.md), [Staging Branch Workflow](/Systems/staging-branch-workflow.md), [Transparency & Privacy](/Foundation/transparency-and-privacy.md)
 
 #### amlcoftherockies.org
 - **URL**: https://github.com/amlcoftherockies/amlcoftherockies.org
@@ -52,8 +46,7 @@ This document serves as the **single source of truth** for all AMLC repositories
 
 ### Category: Governance
 Repositories that manage community governance, policies, and decision-making.
-- amlc-handbook
-- amlc-handbook-staging
+- amlc-handbook (with `main` and `staging` branches)
 
 ### Category: Public Presence
 Repositories that represent AMLC to the public.
@@ -225,7 +218,14 @@ When a repository is no longer needed:
 
 ### Archived
 
-[None currently]
+#### amlc-handbook-staging (Archived November 2024)
+- **URL**: https://github.com/amlcoftherockies/amlc-handbook-staging
+- **Visibility**: Private (archived)
+- **Purpose**: Was used for internal discussions and work-in-progress content
+- **Archived Reason**: Moved to single-repo workflow with public staging branch for full transparency
+- **Archived Date**: November 2024
+- **Replacement**: Use `staging` branch in amlc-handbook repository
+- **Related Docs**: [Two-Repo Workflow](/Systems/two-repo-workflow.md) (historical), [Staging Branch Workflow](/Systems/staging-branch-workflow.md) (current)
 
 ## 📞 Questions?
 
